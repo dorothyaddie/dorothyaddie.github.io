@@ -24,9 +24,15 @@
     text-decoration: none;
   }
 
-  .addie_font {
-    font-family: 'Cedarville Cursive', sans-serif;   
+  .nav_bar a.addie_font {
+    display: block;
+    font-family: "Cedarville Cursive";
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
+  
   
   .nav_bar a:hover:not(.active) {
     background-color: #003d8d;
