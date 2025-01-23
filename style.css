@@ -4,6 +4,7 @@
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
+    display: flex;
     background-color: #004aad;
   }
   
