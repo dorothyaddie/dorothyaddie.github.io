@@ -27,13 +27,8 @@
     text-decoration: none;
   }
 
-  .nav_bar a.addie_font {
-    display: block;
-    font-family: "Homemade Apple";
-    color: #ddd;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  .addie_font {
+    font-family: 'Homemade Apple', sans-serif;   
   }
   
   .nav_bar a:hover:not(.active) {
