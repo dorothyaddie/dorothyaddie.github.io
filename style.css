@@ -18,7 +18,7 @@
   .nav_bar a {
     display: block;
     font-family: "Poppins";
-    font-size: 10px;
+    font-size: 200px;
     color: #ddd;
     text-align: center;
     padding: 14px 16px;
@@ -28,7 +28,7 @@
   .nav_bar a.addie_font {
     display: block;
     font-family: "Cedarville Cursive";
-    font-size: 5px;
+    font-size: 500px;
     color: #ddd;
     text-align: center;
     padding: 14px 16px;
