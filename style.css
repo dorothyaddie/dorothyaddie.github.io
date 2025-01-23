@@ -8,7 +8,7 @@
     background-color: #004aad;
   }
   
-  .nav_bar li {
+  .nav_bar li.right {
     float: right;
   }
 
