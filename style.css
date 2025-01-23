@@ -1,0 +1,29 @@
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #004aad;
+  }
+  
+  .navbar  {
+    float: right;
+  }
+  
+  .navbar a {
+    display: block;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover:not(.active) {
+    background-color: #003d8d;
+  }
+  
+  .navbar a.active {
+    color: white;
+    background-color: #003d8d;
+  }
