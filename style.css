@@ -7,10 +7,14 @@
     background-color: #004aad;
   }
   
-  .nav_bar  {
+  .nav_bar li {
     float: right;
   }
-  
+
+  .nav_bar li.left {
+    float: left;
+  }
+
   .nav_bar a {
     display: block;
     color: #ddd;
