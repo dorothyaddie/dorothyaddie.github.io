@@ -3,29 +3,60 @@ html, body {
   padding: 0;
 }
 
-.addie_image {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-}
-
 .image_container {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  .addie_image {
-      width: 100%; /* On small screens, the image takes up the full width */
-      height: 100%; /* Full viewport height */
+.flowers_left,
+.flowers_right {
+  max-width: 250px; /* Adjust size of flowers as needed */
+}
+
+.addie_image {
+  max-width: 400px; /* Adjust size of Addie image */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.addie_about_heading, .experience_header, .contact_header {
+  font-family: "Tinos";
+  font-size: 30px;
+  color: #383c3c;
+}
+.addie_about_text_1, .addie_about_text_2 {
+  font-family: "Tinos";
+  font-size: 20px;
+  color: #383c3c;
+
+}
+
+
+@media (max-width: 900px) {
+  .image_text_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  
+
+  .text_container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%; 
+  }
+  .addie_image {
+      width: calc(100% - 20px); 
+      height: auto; 
+      object-fit: contain;
+  }
 
   .image_container {
-      flex-direction: column; /* Stack image and text vertically on small screens */
+      flex-direction: column;
+      width: 100%;
+      height: 100%; 
+      padding: 15px;
+      box-sizing: border-box;
   }
 }
 
@@ -34,10 +65,14 @@ html, body {
     margin: 0;
     margin-top: 0;
     padding-top: 0;
-    padding: 0;
+    padding: 5px 0px 0px 10px;
     overflow: hidden;
-    background-color: #004aad;
+    background-color: #ffffff;
   }
+
+.nav_bar{
+  padding: 0px 100px 0px 175px;
+}
   
   .nav_bar li {
     float: right;
@@ -47,35 +82,49 @@ html, body {
     float: left;
   }
 
-  .nav_bar a {
+  .nav_bar a.nav_link {
     display: inline-block;
-    font-family: "Poppins";
+    position: relative;
+    font-family: "Tinos";
     font-size: 20px;
-    color: #ddd;
+    color: #383c3c;
     text-align: center;
-    padding: 20px 14px;
-    text-decoration: none;
-  }
-
-  .nav_bar a.addie_font {
-    display: inline-block;
-    font-family: "Beth Ellen";
-    font-size: 20px;
-    color: #ddd;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
+    z-index: 1;
     text-decoration: none;
   }
   
-  .nav_bar a:hover:not(.active) {
-    background-color: #003d8d;
+  .nav_bar a:hover {
+    color: red;
+  }
+
+  .nav_bar a:hover .hover_circle {
+    opacity: 1; /* Make the circle visible on hover */
+    transform: translate(-50%, -50%) scale(1.2); /* Center and slightly enlarge the circle */
+    z-index: 1
   }
   
   .nav_bar a.active {
-    color: white;
-    background-color: #003d8d;
+    color: red;
   }
 
+  .hover_circle {
+    position: absolute;
+    top: 50%; /* Align vertically with the center of the text */
+    left: 50%; /* Align horizontally with the center of the text */
+    transform: translate(-50%, -50%); /* Center the circle */
+    padding: 5px;
+    opacity: 0;
+    z-index: 0;  
+    width: 100px; 
+  } 
+
   body {
-    background-color: #ffdbdb
+    background-color: #ffffff;
+    margin: 0;
+  }
+
+  .content {
+    background-color: #ffffff;
+    /* margin: 0 calc(10% - 20px); */
   }
