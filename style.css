@@ -20,12 +20,27 @@ html, body {
   border-radius: 10px; /* Optional: Rounded corners */
 }
 
-.addie_about_heading, .experience_header, .contact_header {
+.about_header, .contact_header {
   font-family: "Tinos";
   font-size: 30px;
   color: #383c3c;
 }
-.addie_about_text_1, .addie_about_text_2 {
+
+.about_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 0px 0px 0px;
+}
+
+.about_content {
+  width: 50%;
+  text-align: left;
+  padding: 0px 200px 0px 20px;
+}
+
+.about_body {
   font-family: "Tinos";
   font-size: 20px;
   color: #383c3c;
@@ -123,12 +138,26 @@ html, body {
     width: 100px; 
   } 
 
-  body {
-    background-color: #ffffff;
-    margin: 0;
+  .scroll_section {
+    height: 100vh;
+    align-items: center;
   }
 
   .content {
+    opacity: 1;
+  }
+
+  .content.hidden{
+    opacity: 0;
+  }
+
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    height: 600vh;
+  }
+
+  .landing {
     background-color: #ffffff;
     /* margin: 0 calc(10% - 20px); */
   }
