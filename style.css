@@ -20,10 +20,31 @@ html, body {
   border-radius: 10px; 
 }
 
-.about_header, .experience_header, .contact_header {
+.header {
+  position: relative;
+  z-index: 2;
   font-family: "Tinos";
   font-size: 30px;
-  color: #383c3c;
+  color: red;
+}
+
+.header_wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  overflow: visible;
+  width: max-content; 
+}
+
+.header_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 75%;
+  overflow: visible; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .about_container {
@@ -48,16 +69,16 @@ html, body {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .experience_text {
   width: 50%;
   height: 100vh;
   display: flex; 
-  justify-content: center;
+  justify-content: center; 
   flex-direction: column;
 }
 
@@ -189,5 +210,4 @@ html, body {
 
   .landing {
     background-color: #ffffff;
-    /* margin: 0 calc(10% - 20px); */
   }
