@@ -25,7 +25,7 @@ html, body {
   z-index: 2;
   font-family: "Tinos";
   font-size: 30px;
-  color: red;
+  color: #383c3c;
 }
 
 .header_wrapper {
@@ -36,12 +36,12 @@ html, body {
   width: max-content; 
 }
 
-.header_circle {
+.header_underline {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
-  width: auto;
-  height: 75%;
+  width: 100%;
+  height: auto;
   overflow: visible; 
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -63,14 +63,15 @@ html, body {
   font-family: "Tinos";
   font-size: 20px;
   color: #383c3c;
+  flex-direction: column;
 }
 
 .experience_content {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center; 
-  align-items: center;
+  justify-content: left; 
+  align-items: left;
   overflow: visible;
 }
 
@@ -80,6 +81,16 @@ html, body {
   display: flex; 
   justify-content: center; 
   flex-direction: column;
+  padding: 0px;
+}
+
+.experience_text_extended {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  /* display: flex;  */
+  /* justify-content: center;  */
+  /* flex-direction: column; */
 }
 
 .experience_image {
@@ -97,6 +108,66 @@ html, body {
   align-items: center;
   object-fit: contain; 
   display: block; 
+}
+
+.button_container {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  overflow: visible;
+  width: max-content;
+}
+
+.button_text {
+  position: relative;
+  z-index: 2;
+  font-family: "Tinos";
+  font-size: 20px;
+  color: red;
+}
+
+.button_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  opacity: 1;
+  height: 75%;
+  overflow: visible; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.button a.button_link {
+  display: inline-block;
+  position: relative;
+  font-family: "Tinos";
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  padding: 20px 30px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.button a.active {
+  color: red;
+}
+
+.button a.active .button_circle {
+  opacity: 1; /* Make the circle visible on hover */
+  transform: translate(-50%, -50%) scale(1.2); /* Center and slightly enlarge the circle */
+  z-index: 1
+}
+
+.button a:hover {
+  color: red;
+}
+
+.button a:hover .button_circle {
+  opacity: 1; /* Make the circle visible on hover */
+  transform: translate(-50%, -50%) scale(1.2); /* Center and slightly enlarge the circle */
+  z-index: 1
 }
 
 @media (max-width: 900px) {
@@ -180,8 +251,8 @@ html, body {
 
   .hover_circle {
     position: absolute;
-    top: 50%; /* Align vertically with the center of the text */
-    left: 50%; /* Align horizontally with the center of the text */
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); /* Center the circle */
     padding: 5px;
     opacity: 0;
@@ -203,11 +274,13 @@ html, body {
   }
 
   body {
-    background-color: #ffffff;
+    background-image: url("https://www.tilingtextures.com/wp-content/uploads/2022/05/229-comp-1024x1024.jpg");
+    background-color: #ffffff; 
     margin: 0px 10% 0px 10%;;
-    height: 600vh;
+    height: auto;
   }
 
-  .landing {
+  /* .landing {
     background-color: #ffffff;
-  }
+    /* margin: 0 calc(10% - 20px); */
+  /* } */ 
