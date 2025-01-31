@@ -1,42 +1,40 @@
+.nav_bar, .experience_page_content, .experience_text_extended {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.experience_text_extended {
+    width: 80%
+}
+
 .experience_page_content {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 40px; 
+}
+
+.experience_page_text {
+    width: 50%; 
+    overflow: visible;
+}
+
+.experience_page_image {
+    width: 25%;
+    padding-top: 5%;
+}
+
+.window {
     width: 100%;
-    align-items: flex-start;
-  }
-  
-  .experience_page_text {
-    width: 50%;
+    height: auto;
+}
+
+body {
+    margin: 0; 
     padding: 0;
-  }
-  
-  .experience_page_image {
-    width: 50%;
-    padding: 5% 0 0 0;
     display: flex;
-    justify-content: center;
-  }
-  
-  .experience_text_extended {
-    width: 100%;
-    padding: 0;
-  }
-  
-  .experience_body ul {
-    margin: 0;
-    list-style-type: none;
-  }
-
-  .experience_body li.item {
-    list-style-type: disc;
-  }
-
-  .experience_body li {
-    margin: 0;
-    padding: 0;
-  }
-
-  body{
-    height: 150vh
-  }
+    flex-direction: column; 
+    align-items: center; 
+}

@@ -1,0 +1,17 @@
+@media (max-width: 900px) {
+    .experience_page_content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .experience_page_image {
+        display: none;
+    }
+
+    .experience_page_text {
+        display: flex;
+        width: 100%;
+    }
+
+}

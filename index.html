@@ -3,7 +3,10 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href = "style.css" >
+  <link rel="stylesheet" href = "index.css" >
+  <link rel="stylesheet" href = "experience.css" >
+  <link rel="stylesheet" href = "contact.css" >
+  <link rel="stylesheet" href = "index_small.css">
   <script src="index.js"></script>
   <link link rel="icon" href="favicon.png" type="image/png">
 </head>
@@ -11,23 +14,23 @@
 <body>
   <nav class="nav_bar">
     <ul>
-      <li class = "right">
-        <a href="#Contact" class = "nav_link" > Contact
-          <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
-        </a>
-      </li>
-      <li class = "right"> 
-        <a href="/experience.html" class = "nav_link"> Experience
-          <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
-        </a>
-      </li>
       <li class = "left" >
         <a href = "/" class = "nav_link" > Addie
           <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
         </a>
       </li>
-      <li class = "left"> 
-        <a href="#Projects" class = "nav_link"> Projects
+      <li class = "left" >
+        <a href = "#projects" class = "nav_link" > Projects
+          <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
+        </a>
+      </li>
+      <li class = "right">
+        <a href="/#Contact" class = "nav_link" > Contact
+          <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
+        </a>
+      </li>
+      <li class = "right"> 
+        <a href="/experience.html" class = "nav_link"> Experience
           <img src="red_circle_hover.png" class="hover_circle" alt="Circle">
         </a>
       </li>
@@ -76,8 +79,8 @@
 
     <section id = "Experience" class = "scroll_section">
       <div class = "content hidden">
-        <div class = "experience_content">
-          <div class = "experience_text"> 
+        <div class = "experience_page_content">
+          <div class = "experience_page_text"> 
             <div class = "header_wrapper">
               <p class = "header"> Experience </p>
               <img src="underline.png" class="header_underline" alt="Underline">
@@ -87,22 +90,23 @@
                   <li>
                     <strong>Assistant Data Scientist, The New York Stem Cell Foundation</strong>
                     <ul>
-                      <li>Developed a deep learning tool to segment nuclei with ~95% accuracy and a cell count difference of ~5</li>
-                      <li>Identified fluorescent markers to detect Parkinson's disease mutations with &gt;90% accuracy</li>
-                      <li>Managed tight deadlines and tasks for various scientific publications and research teams</li>
-                      <li>Communicated monthly analysis and project updates to nonexpert and shareholder audiences</li>
+                      <li class = "item">Developed a deep learning tool to segment nuclei with ~95% accuracy and a cell count difference of ~5</li>
+                      <li class = "item">Identified fluorescent markers to detect Parkinson's disease mutations with &gt;90% accuracy</li>
+                      <li class = "item">Managed tight deadlines and tasks for various scientific publications and research teams</li>
+                      <li class = "item">Communicated monthly analysis and project updates to nonexpert and shareholder audiences</li>
                     </ul>
                   </li>
                   <li>
                     <strong>Founder, MESH: Fiber Arts Collective</strong>
                     <ul>
-                      <li>Organized monthly meetups for over 150 fiber artists to share skills and projects</li>
-                      <li>Identified collaborations to acquire an art studio, event space, caterer, and app partnership</li>
-                      <li>Raised $1,974 to benefit humanitarian causes through a community art project and raffle</li>
-                      <li>Developed a social media presence to create viral content and increase community engagement</li>
+                      <li class = "item">Organized monthly meetups for over 150 fiber artists to share skills and projects</li>
+                      <li class = "item">Identified collaborations to acquire an art studio, event space, caterer, and app partnership</li>
+                      <li class = "item">Raised $1,974 to benefit humanitarian causes through a community art project and raffle</li>
+                      <li class = "item">Developed a social media presence to create viral content and increase community engagement</li>
                     </ul>
                   </li>
                 </ul>
+                <p></p>
                 <div class = "button">
                   <a href="/experience.html" class = "button_link"> See more
                     <img src="red_circle_hover.png" class="button_circle" alt="Circle"> 
@@ -110,7 +114,7 @@
                 </div>
               </div>
           </div>
-          <div class = "experience_image"> 
+          <div class = "experience_page_image"> 
             <img src = "window.PNG" class = "window"> 
           </div>
         </div>
@@ -124,9 +128,21 @@
             <img src="underline.png" class="header_underline" alt="Circle">
         </div>
         <div class = "contact_container">
-          <p> This is more more more yay! </p>
-          <p> This is more more more yay! </p>
-          <p> This is more more more yay! </p>
+          <div class = "contact_icon">
+            <a href="https://www.linkedin.com/in/dorothyaddie/" class = "contact_link"> 
+              <img src="linkedin.png" class="contact_icon_link" > 
+            </a>
+          </div>
+          <div class = "contact_icon">
+            <a href="https://www.linkedin.com/in/dorothyaddie/" class = "contact_link"> 
+              <img src="linkedin.png" class="contact_icon_link" > 
+            </a>
+          </div>
+          <div class = "contact_icon">
+            <a href="https://www.linkedin.com/in/dorothyaddie/" class = "contact_link"> 
+              <img src="linkedin.png" class="contact_icon_link" > 
+            </a>
+          </div>
         </div>
       </div>
     </section>
