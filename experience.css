@@ -31,6 +31,14 @@
     height: auto;
 }
 
+.experience_body li.item {
+    list-style-type: disc;
+}
+
+.experience_body ul {
+    list-style-type: none;
+}
+
 body {
     margin: 0; 
     padding: 0;

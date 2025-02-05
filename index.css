@@ -136,24 +136,76 @@ html, body {
   z-index: 1
 }
 
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center; 
+  max-width: 100%;
+}
+
+.contact_link {
+  position: relative;
+  display: inline-block;
+}
+
+.contact_icon {
+  width: auto;
+  padding: 0px 170px 0px 30px;
+}
+
+.contact_icon_active,
+.contact_icon_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 150px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.contact_icon_active {
+  opacity: 0;
+  z-index: 1;
+}
+
+.contact_icon_link {
+  opacity: 1;
+}
+
+.contact_link:hover .contact_icon_active {
+  opacity: 1;
+}
+
+.contact_link:hover .contact_icon_link {
+  opacity: 0;
+}
+
 .nav_bar ul {
     display: flex;
     list-style-type: none;
     margin: 0;
-    margin-top: 0;
-    padding-top: 0;
+    width: 100%;
     padding-left: 0;
-    gap: 90px;
+    gap: 30px;
   }
 
 .nav_bar{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 0;
-  width: 80%;
-  padding: 2% 0% 2% 0%;
-  max-width: 10px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 2% 10% 2% 10%;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
   
   .nav_bar li {
@@ -161,7 +213,7 @@ html, body {
   }
 
   .nav_bar li.left {
-    display: inline;
+    margin-right: auto;
   } 
 
   .nav_bar a.nav_link {
@@ -171,7 +223,7 @@ html, body {
     font-size: 20px;
     color: #383c3c;
     text-align: center;
-    padding: 10px 40px;
+    padding: 0px 10px;
     z-index: 1;
     text-decoration: none;
   }
